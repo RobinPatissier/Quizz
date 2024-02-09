@@ -1,6 +1,7 @@
 <?php
 session_start();
 require_once './config/connexion.php';
+include_once './partials/header.php';
 ?>
 
 <!DOCTYPE html>
@@ -16,10 +17,7 @@ require_once './config/connexion.php';
 
 <body>
     <video id=video autoplay="autoplay" muted="" loop="infinite" src="./media/poud.webm"></video>
-    <?php
-    ?>
-
-
+   
     <div class="card m-2" style="max-width: 200px;">
         <div class="card-body d-flex align-items-center justify-content-between">
             <h5 class="card-title mb-0">Bonjour <?= $_SESSION['pseudo']; ?></h5>
